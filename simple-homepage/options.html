@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>设置</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="container">
+        <h2>搜索引擎设置</h2>
+        <div class="search-engines" id="searchEngines">
+            <!-- 搜索引擎列表将通过JavaScript动态添加 -->
+        </div>
+        
+        <div class="add-search-engine">
+            <h3>添加新的搜索引擎</h3>
+            <input type="text" id="engineName" placeholder="搜索引擎名称">
+            <input type="text" id="engineUrl" placeholder="搜索URL (包含 %s 作为搜索词占位符)">
+            <input type="text" id="engineIcon" placeholder="图标URL">
+            <button id="addEngine">添加</button>
+        </div>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>

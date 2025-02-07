@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>新标签页</title>
+    <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+    <div class="container">
+        <div class="time-display" id="timeDisplay">00:00:00</div>
+        
+        <div class="search-container">
+            <div class="search-engine-selector">
+                <img id="currentSearchEngine" src="" alt="搜索引擎">
+                <div class="dropdown-content" id="searchEngineDropdown"></div>
+            </div>
+            <input type="text" id="searchInput" placeholder="输入搜索内容...">
+        </div>
+        
+        <div class="bookmarks-container" id="bookmarksContainer">
+            <!-- 书签将通过JavaScript动态添加 -->
+        </div>
+    </div>
+
+    <!-- 模态窗口 -->
+    <div class="modal" id="bookmarkModal">
+        <div class="modal-content">
+            <h3>添加新书签</h3>
+            <input type="text" id="bookmarkName" placeholder="书签名称">
+            <input type="text" id="bookmarkUrl" placeholder="网址">
+            <div class="modal-buttons">
+                <button id="cancelBookmark">取消</button>
+                <button id="saveBookmark">保存</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="newtab.js"></script>
+</body>
+</html>

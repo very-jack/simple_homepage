@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "简单主页",
+  "version": "1.0",
+  "description": "一个简洁美观的新标签页，支持自定义搜索引擎和快捷书签",
+  "permissions": [
+    "storage",
+    "favicon"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
